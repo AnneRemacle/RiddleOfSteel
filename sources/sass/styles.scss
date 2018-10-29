@@ -1,0 +1,25 @@
+/* Riddle
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Anne
+ * started at 29/10/2018
+ */
+
+ // 1. Settings - Variables globales
+
+@import "settings/colors";
+@import "settings/fonts";
+
+// 2. Tools - Mixins globaux, functions & outils
+
+// 3. Generic - Style de remise à zéro (reset, normalize…)
+@import "generic/meyer-reset";
+@import "generic/box-sizing";
+
+// 4. Base - Éléments bruts
+
+// 5. Objects - Éléments de mise en forme non-cosmétique
+
+
+// 6. Components - Design des composants, morceaux d'UI
