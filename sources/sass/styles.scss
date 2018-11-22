@@ -6,6 +6,8 @@
  * started at 29/10/2018
  */
 
+ @import "boostrap.min.css";
+
  // 1. Settings - Variables globales
 
 @import "settings/colors";
@@ -23,3 +25,5 @@
 
 
 // 6. Components - Design des composants, morceaux d'UI
+@import "components/intro";
+@import "components/nav";
