@@ -1,12 +1,240 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Riddle of Steel</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-</body>
+        <link rel="stylesheet" href="build/css/styles.css">
+        <script
+          src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+        <script src="build/js/script.js"></script>
+        <title>Riddle of Steel</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <h2 class="sro">Navigation principale</h2>
+            <div class="navigation-button navigation-button__open">Menu</div>
+            <div class="navigation-button navigation-button__close">Fermer</div>
+
+            <a href="/" class="navigation-logo" title="Retour à l'accueil">
+                <img src="build/assets/images/logo.png" alt="Riddle of Steel" />
+            </a>
+
+            <ul class="navigation-menu">
+                <li class="navigation-menu__item current">
+                    <a href="#intro">Accueil</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <a href="#about">À propos</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <a href="#infos">Infos pratiques</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <a href="#clubs">Nos clubs</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <a href="#ressources">Ressources</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="intro" class="slider">
+            <h1 class="slider-title">
+                Riddle of Steel
+                <span class="slider-subtitle">Weapon Academy</span>
+            </h1>
+
+        </div>
+
+        <section id="school" class="section">
+            <h2 class="section-title">À propos</h2>
+            <div class="section-content">
+                <!-- <figure class="section-content__img">
+                    <img src="build/assets/images/2.jpg" alt="">
+                </figure> -->
+                <section class="section-content__text content">
+                    <h3 class="content-title">
+                        La Riddle of Steel Weapon Academy est une école de combat à l'arme en Latex.
+                    </h3>
+                    <p>Elle fut créée il y'a une vingtaine d'année par Mark Gilbert en Angleterre.</p>
+                    <p>C'est le fruit d'une réflexion sur le combat à l'arme en latex dans les jeux de rôles Grandeur Nature. </p>
+                    <p>Cependant, étant une discipline découlant du 'GN', nous ne voulons pas nous défaire de l'aspect ludique et sécuritaire du combat. C'est dans cette optique que nous organisons des cours, non pas pour former des escrimeurs, mais former les gens au travers de leurs désirs, qu'ils soient motivés par l'aspect plus technique, plus ludique ou tout simplement théâtral.</p>
+
+                    <p class="content-subtitle">Principes de cette école</p>
+                    <ul class="content-list">
+                        <li class="content-list__item">
+                            Apprendre à n'importe quelle personne qui s'intéresse au combat à l'arme en latex.
+                        </li>
+                        <li class="content-list__item">
+                            Progresser dans les techniques d'arme à travers l'entraînement et la pratique.
+                        </li>
+                        <li class="content-list__item">
+                            Augmenter la sécurité du combat à l'arme en latex.
+                        </li>
+                        <li class="content-list__item">
+                            Promouvoir le combat à l'arme en latex comme étant un Art de combat.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">L'escrime ludique</h2>
+            <div class="section-content">
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/AkaD_sOpXiA" allow="autoplay; encrypted-media" allowfullscreen class="section-content__img"></iframe> -->
+                <div class="section-content__text content">
+                    <p>
+                        L’escrime ludique est peu à peu devenue une activité à part entière, pratiquée tant pour l’aspect sportif que pour sa dimension divertissante et conviviale.
+                    </p>
+                    <p>
+                        L’escrime ludique est une discipline sportive et ludique fondée sur une adaptation de diverses techniques d’escrime sportive, des arts martiaux historiques européens (AMHE), d’escrime artistique et d’arts martiaux variés, en vue d’être utilisées dans le but de toucher les parties valables de ses adversaires, selon les principes de sécurité liés à l’utilisation des répliques d'armes en mousse.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-img">
+            <figure class="section-img__figure">
+                <img src="" alt="" class="section-img__image" />
+            </figure>
+            <p class="section-img__texte">Soyez prêt pour le combat en GN</p>
+        </div>
+
+        <section id="pratique" class="section">
+            <h2 class="section-title">Informations pratiques</h2>
+            <p>Si vous n'êtes pas famillier avec notre école, vous vous posez sans doute quelques questions</p>
+
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item active">
+                        <div class="carousel-text">
+                            <p class="carousel-text__title">
+                                À qui s'adressent les entraînements?
+                            </p>
+                            <div class="carousel-text__answer">
+                                <p>
+                                    À toutes les personnes qui veulent apprendre et en savoir plus sur le combat à l'arme en latex.
+                                </p>
+                            </div>
+                        </div>
+                        <figure class="carousel-img">
+                            <img src="" alt="">
+                        </figure>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-text">
+                            <p class="carousel-text__title">
+                                Quel équipement dois-je apporter?
+                            </p>
+                            <div class="carousel-text__answer">
+                                <p>
+                                    Une tenue de sport, des baskets qui ne font pas de marque sur le sol et tes armes en latex, bouclier. Nous recommandons l'utilisation de genouillères.
+                                </p>
+                            </div>
+                        </div>
+                        <figure class="carousel-img">
+                            <img src="" alt="">
+                        </figure>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-text">
+                            <p class="carousel-text__title">
+                                Combien cela coûte-t-il?
+                            </p>
+                            <div class="carousel-text__answer">
+                                <p>
+                                    Comme nous louons plusieurs salles, nous demandons à nos membres une participation financière.
+                                </p>
+                                <p>
+                                    Le P.A.F. de l'abonnement à l'année est de 80 euros. <br />
+                                    Il est également possible d'acheter des cartes non nominatives au tarif de 25 et 50 euros pour respectivement 6 et 15 séances.
+                                    Le tarif à la séance est de 5 euros.
+                                </p>
+                                <p>
+                                    Les cartes, comme les abonnements sont vallables dans toutes les salles !
+                                    Et bien évidemment la première séance est gratuite.
+                                    Numéro de compte : BE73 0688 9338 3060.
+                                </p>
+                            </div>
+                        </div>
+                        <figure class="carousel-img">
+                            <img src="" alt="">
+                        </figure>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-text">
+                            <p class="carousel-text__title">
+                                Y a-t-il une assurance?
+                            </p>
+                            <div class="carousel-text__answer">
+                                <p>
+                                    Oui, vous êtes assurés via l'assurance fédérale prise par Riddle of Steel Asbl auprès de la Fédération belge du jeu de rôles grandeur nature.
+                                </p>
+                            </div>
+                        </div>
+                        <figure class="carousel-img">
+                            <img src="" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- TODO: indicators -->
+            </div>
+        </section>
+
+        <section id="salles" class="section">
+            <h2 class="section-title">Nos différents clubs</h2>
+
+            <ul class="clubs-container">
+                <li class="clubs-item club">
+                    <p class="club-name">Bruxelles</p>
+                    <p class="club-intro">Le dimanche de 17h à 19h</p>
+                </li>
+                <li class="clubs-item">
+                    <p class="club-name">Liège</p>
+                    <p class="club-intro">Le dimanche de 17h à 20h</p>
+                </li>
+                <li class="clubs-item">
+                    <p class="club-name">Namur</p>
+                    <p class="club-intro">Le mardi de 17h à 19h et le mercredi de 18h à 20h</p>
+                </li>
+                <li class="clubs-item">
+                    <p class="club-name">Nivelles</p>
+                    <p class="club-intro">Le vendredi de 19h30 à 21h30</p>
+                </li>
+                <li class="clubs-item">
+                    <p class="club-name">Anvers</p>
+                    <p class="club-intro">Suspendue actuellement</p>
+                </li>
+                <li class="clubs-item">
+                    <p class="club-name">Charleroi</p>
+                    <p class="club-intro">Le dimanche de 17h à 19h</p>
+                </li>
+                <li class="clubs-item">
+                    <p class="club-name">Canada</p>
+                    <p class="club-intro">Le mercredi de 18h15 à 19h15</p>
+                </li>
+                <li class="clubs-item">
+                    <p class="club-name">Lure</p>
+                    <p class="club-intro">Le samedi de 19h à 21h</p>
+                </li>
+                <li class="clubs-item">
+                    <p class="club-name">Strasbourg</p>
+                    <p class="club-intro">Le mardi de 20h à 22h</p>
+                </li>
+            </ul>
+        </section>
+
+    </body>
 </html>
