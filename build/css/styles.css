@@ -308,3 +308,70 @@ html {
     top: 5em;
   }
 }
+
+/* Riddle
+ *
+ * /sass/components/navigation.scss - navigation styles
+ *
+ * coded by Anne
+ * started at 10/11/2018
+ */
+.slider {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.slider-image {
+  width: 100%;
+}
+
+.slider-image img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-title {
+  position: absolute;
+  font-size: 1.618em;
+  color: white;
+  z-index: 3;
+  width: 100%;
+  top: 3em;
+  left: 0;
+  text-align: center;
+  text-shadow: 3px 3px 3px #362F27;
+}
+
+.slider-subtitle {
+  display: block;
+  font-size: .7em;
+  font-weight: 400;
+  margin-top: .5em;
+}
+
+@media screen and (min-width: 768px) {
+  .slider-title {
+    font-size: 2.058em;
+    top: 6em;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  .slider-title {
+    font-size: 2.618em;
+    top: 7em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .slider-title {
+    font-size: 4.236em;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .slider-title {
+    font-size: 6em;
+  }
+}
