@@ -64,9 +64,6 @@
         <section id="school" class="section">
             <h2 class="section-title">À propos</h2>
             <div class="section-content">
-                <!-- <figure class="section-content__img">
-                    <img src="build/assets/images/2.jpg" alt="">
-                </figure> -->
                 <section class="section-content__text content">
                     <h3 class="content-title">
                         La Riddle of Steel Weapon Academy est une école de combat à l'arme en Latex.
@@ -91,13 +88,16 @@
                         </li>
                     </ul>
                 </section>
+                <figure class="section-content__img">
+                    <img src="build/assets/images/2.jpg" alt="">
+                </figure>
             </div>
         </section>
 
         <section id="about" class="section">
             <h2 class="section-title">L'escrime ludique</h2>
             <div class="section-content">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/AkaD_sOpXiA" allow="autoplay; encrypted-media" allowfullscreen class="section-content__img"></iframe> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AkaD_sOpXiA" allow="autoplay; encrypted-media" allowfullscreen class="section-content__img"></iframe>
                 <div class="section-content__text content">
                     <p>
                         L’escrime ludique est peu à peu devenue une activité à part entière, pratiquée tant pour l’aspect sportif que pour sa dimension divertissante et conviviale.
@@ -109,10 +109,7 @@
             </div>
         </section>
 
-        <div class="section-img">
-            <figure class="section-img__figure">
-                <img src="" alt="" class="section-img__image" />
-            </figure>
+        <div class="section-img first">
             <p class="section-img__texte">Soyez prêt pour le combat en GN</p>
         </div>
 
@@ -120,8 +117,8 @@
             <h2 class="section-title">Informations pratiques</h2>
             <p>Si vous n'êtes pas famillier avec notre école, vous vous posez sans doute quelques questions</p>
 
-            <div class="carousel">
-                <div class="carousel-container">
+            <div class="carousel-container">
+                <div class="carousel">
                     <div class="carousel-item active">
                         <div class="carousel-text">
                             <p class="carousel-text__title">
@@ -134,7 +131,7 @@
                             </div>
                         </div>
                         <figure class="carousel-img">
-                            <img src="" alt="">
+                            <img src="build/assets/images/2.jpg" alt="">
                         </figure>
                     </div>
 
@@ -150,7 +147,7 @@
                             </div>
                         </div>
                         <figure class="carousel-img">
-                            <img src="" alt="">
+                            <img src="build/assets/images/2.jpg" alt="">
                         </figure>
                     </div>
 
@@ -176,7 +173,7 @@
                             </div>
                         </div>
                         <figure class="carousel-img">
-                            <img src="" alt="">
+                            <img src="build/assets/images/2.jpg" alt="">
                         </figure>
                     </div>
 
@@ -192,57 +189,65 @@
                             </div>
                         </div>
                         <figure class="carousel-img">
-                            <img src="" alt="">
+                            <img src="build/assets/images/2.jpg" alt="">
                         </figure>
                     </div>
                 </div>
 
-                <!-- TODO: indicators -->
+                <div class="carousel-buttons">
+                    <div class="carousel-buttons__single btn0">0</div>
+                    <div class="carousel-buttons__single btn1">1</div>
+                    <div class="carousel-buttons__single btn2">2</div>
+                    <div class="carousel-buttons__single btn3">3</div>
+                </div>
             </div>
+
         </section>
 
-        <section id="salles" class="section">
-            <h2 class="section-title">Nos différents clubs</h2>
+        <div class="section-bg">
+            <section id="salles" class="section">
+                <h2 class="section-title">Nos différents clubs</h2>
 
-            <ul class="clubs-container">
-                <li class="clubs-item club">
-                    <p class="club-name">Bruxelles</p>
-                    <p class="club-intro">Le dimanche de 17h à 19h</p>
-                </li>
-                <li class="clubs-item">
-                    <p class="club-name">Liège</p>
-                    <p class="club-intro">Le dimanche de 17h à 20h</p>
-                </li>
-                <li class="clubs-item">
-                    <p class="club-name">Namur</p>
-                    <p class="club-intro">Le mardi de 17h à 19h et le mercredi de 18h à 20h</p>
-                </li>
-                <li class="clubs-item">
-                    <p class="club-name">Nivelles</p>
-                    <p class="club-intro">Le vendredi de 19h30 à 21h30</p>
-                </li>
-                <li class="clubs-item">
-                    <p class="club-name">Anvers</p>
-                    <p class="club-intro">Suspendue actuellement</p>
-                </li>
-                <li class="clubs-item">
-                    <p class="club-name">Charleroi</p>
-                    <p class="club-intro">Le dimanche de 17h à 19h</p>
-                </li>
-                <li class="clubs-item">
-                    <p class="club-name">Canada</p>
-                    <p class="club-intro">Le mercredi de 18h15 à 19h15</p>
-                </li>
-                <li class="clubs-item">
-                    <p class="club-name">Lure</p>
-                    <p class="club-intro">Le samedi de 19h à 21h</p>
-                </li>
-                <li class="clubs-item">
-                    <p class="club-name">Strasbourg</p>
-                    <p class="club-intro">Le mardi de 20h à 22h</p>
-                </li>
-            </ul>
-        </section>
+                <ul class="clubs-container">
+                    <li class="clubs-item club">
+                        <p class="club-name">Bruxelles</p>
+                        <p class="club-intro">Le dimanche de 17h à 19h</p>
+                    </li>
+                    <li class="clubs-item club">
+                        <p class="club-name">Liège</p>
+                        <p class="club-intro">Le dimanche de 17h à 20h</p>
+                    </li>
+                    <li class="clubs-item club">
+                        <p class="club-name">Namur</p>
+                        <p class="club-intro">Le mardi de 17h à 19h et le mercredi de 18h à 20h</p>
+                    </li>
+                    <li class="clubs-item club">
+                        <p class="club-name">Nivelles</p>
+                        <p class="club-intro">Le vendredi de 19h30 à 21h30</p>
+                    </li>
+                    <li class="clubs-item club">
+                        <p class="club-name">Anvers</p>
+                        <p class="club-intro">Suspendue actuellement</p>
+                    </li>
+                    <li class="clubs-item club">
+                        <p class="club-name">Charleroi</p>
+                        <p class="club-intro">Le dimanche de 17h à 19h</p>
+                    </li>
+                    <li class="clubs-item club">
+                        <p class="club-name">Canada</p>
+                        <p class="club-intro">Le mercredi de 18h15 à 19h15</p>
+                    </li>
+                    <li class="clubs-item club">
+                        <p class="club-name">Lure</p>
+                        <p class="club-intro">Le samedi de 19h à 21h</p>
+                    </li>
+                    <li class="clubs-item club">
+                        <p class="club-name">Strasbourg</p>
+                        <p class="club-intro">Le mardi de 20h à 22h</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
     </body>
 </html>
