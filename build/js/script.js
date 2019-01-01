@@ -13,4 +13,19 @@ $(document).ready(function() {
           }
     } )
 
+    var mySiema = new Siema({
+        selector: '.siema',
+        duration: 400,
+        easing: 'ease-out',
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: true,
+        rtl: false,
+        onInit: () => {},
+        onChange: () => {},
+    });
+    setInterval(() => mySiema.next(), 3000)
 });
