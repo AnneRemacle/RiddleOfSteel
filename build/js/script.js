@@ -28,6 +28,30 @@ $(document).ready(function() {
         onChange: () => {},
     });
     setInterval(() => mySiema.next(), 3000)
+
+    var carousel = new Siema({
+        selector: '.carousel',
+        duration: 400,
+        easing: 'ease-out',
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: true,
+        rtl: false,
+        onInit: () => {},
+        onChange: () => {},
+    });
+    const btn0 = document.querySelector('.btn0');
+    const btn1 = document.querySelector('.btn1');
+    const btn2 = document.querySelector('.btn2');
+    const btn3 = document.querySelector('.btn3');
+
+    btn0.addEventListener('click', () => carousel.goTo(0));
+    btn1.addEventListener('click', () => carousel.goTo(1));
+    btn2.addEventListener('click', () => carousel.goTo(2));
+    btn3.addEventListener('click', () => carousel.goTo(3));
 });
 
 // Display menu on scroll

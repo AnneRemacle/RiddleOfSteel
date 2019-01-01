@@ -1,0 +1,91 @@
+/* Riddle
+ *
+ * /sass/components/carousel.scss - question carousel styles
+ *
+ * coded by Anne
+ * started at 10/11/2018
+ */
+
+.carousel {
+    margin: 2em 0;
+
+    &-container {
+        position: relative;
+    }
+
+    &-item {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-text {
+        margin-bottom: 1.5em;
+        &__title {
+            font-size: $sub2;
+            font-weight: 600;
+            color: $titles;
+            margin-bottom: .6em;
+        }
+
+    }
+    &-img {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-buttons {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 1em auto;
+        position: relative;
+        bottom: 0;
+
+        &__single {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            width: 23%;
+            height: .3em;
+            margin: 0 1%;
+            justify-content: space-between;
+            background: #ddd;
+            text-indent: -9999999px;
+            cursor: pointer;
+
+            &:hover, &:active {
+                background: $lightColor;
+                transition: background-color .3s ease;
+            }
+        }
+        &__single.active {
+            background: $lightColor;
+            transition: background-color .3s ease;
+        }
+    }
+}
+
+@media screen and (min-width:981px) {
+    .carousel {
+        &-item {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-img {
+            width: 45%;
+        }
+        &-text {
+            width: 50%;
+        }
+        &-buttons {
+            width: 40%;
+        }
+    }
+}
