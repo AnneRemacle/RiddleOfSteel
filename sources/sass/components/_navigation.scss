@@ -7,9 +7,12 @@
  */
 
  .navigation {
-     position: relative;
-     background: rgba($lightColor, 0.5);
+     position: fixed;
+     background: lighten($lightColor, 5%);
      padding: .5em 3%;
+     top: -6em;
+     z-index: 3;
+     transition: top .3s ease;
 
      &-button {
          position: absolute;

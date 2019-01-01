@@ -115,9 +115,12 @@ html {
  * started at 10/11/2018
  */
 .navigation {
-  position: relative;
-  background: rgba(0, 193, 193, 0.5);
+  position: fixed;
+  background: #00dbdb;
   padding: .5em 3%;
+  top: -6em;
+  z-index: 3;
+  transition: top .3s ease;
 }
 
 .navigation-button {
@@ -335,7 +338,7 @@ html {
   position: absolute;
   font-size: 1.618em;
   color: white;
-  z-index: 3;
+  z-index: 2;
   width: 100%;
   top: 3em;
   left: 0;

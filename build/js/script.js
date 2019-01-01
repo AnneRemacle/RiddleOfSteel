@@ -29,3 +29,15 @@ $(document).ready(function() {
     });
     setInterval(() => mySiema.next(), 3000)
 });
+
+// Display menu on scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos && prevScrollpos < 200) {
+    document.getElementById("navigation").style.top = "-6em";
+  } else {
+    document.getElementById("navigation").style.top = "0";
+  }
+  prevScrollpos = currentScrollPos;
+}
