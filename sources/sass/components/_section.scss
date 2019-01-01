@@ -1,0 +1,80 @@
+/* Riddle
+ *
+ * /sass/components/section.scss - section styles
+ *
+ * coded by Anne
+ * started at 10/11/2018
+ */
+
+ .section {
+     width: 90%;
+     margin: 3em auto;
+     &-title {
+        font-size: $title;
+        font-weight: 800;
+        text-align: center;
+        color: $titles;
+        text-transform: uppercase;
+        margin-bottom: 1.5em;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 20%;
+            height: 1px;
+            background: $titles;
+            position: absolute;
+            bottom: -.8em;
+            left: 40%;
+        }
+     }
+     &-content {
+         display: -webkit-flex;
+         display: -ms-flex;
+         display: flex;
+         flex-direction: column;
+
+         &__img {
+             margin-bottom: 1.5em;
+             width: 100%;
+             img {
+                 width: 100%;
+             }
+         }
+     }
+
+     &-img {
+         &__figure {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+         }
+         &__texte {
+             font-size: $sub2;
+             color: white;
+             width: 100%;
+             text-align: center;
+             text-shadow: 2px 2px 2px $darkColor;
+             padding-top: 3.5em;
+         }
+     }
+
+     &-img.first {
+         background: url("../assets/images/2.jpg");
+         min-height: 15em;
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+
+     }
+ }
+
+
+@media screen and (min-width: 768px) {
+    .section {
+        width: 80%;
+    }
+}
