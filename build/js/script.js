@@ -13,6 +13,7 @@ $(document).ready(function() {
           }
     } )
 
+    //Carousel for hero photos
     var mySiema = new Siema({
         selector: '.siema',
         duration: 400,
@@ -29,6 +30,7 @@ $(document).ready(function() {
     });
     setInterval(() => mySiema.next(), 3000)
 
+    //carousel for FAQ
     var carousel = new Siema({
         selector: '.carousel',
         duration: 400,
@@ -43,6 +45,8 @@ $(document).ready(function() {
         onInit: () => {},
         onChange: () => {},
     });
+
+    //Buttons for FAQ
     const btn0 = document.querySelector('.btn0');
     const btn1 = document.querySelector('.btn1');
     const btn2 = document.querySelector('.btn2');
@@ -65,3 +69,12 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
+// $(".toggle-button").on("click", function(){
+//     $(this).parent().find(".toggle-content").slideToggle("slow");
+//     if($(this).find("svg").hasClass("fa-plus")){
+//         $(this).find("svg").removeClass("fa-plus").addClass("fa-minus");
+//     }else{
+//         $(this).find("svg").removeClass("fa-minus").addClass("fa-plus");
+//     }
+// });

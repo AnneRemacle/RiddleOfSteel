@@ -109,6 +109,253 @@ html {
 
 html {
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Riddle
+ *
+ * /sass/components/carousel.scss - question carousel styles
+ *
+ * coded by Anne
+ * started at 10/11/2018
+ */
+.carousel {
+  margin: 2em 0;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-item {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-text {
+  margin-bottom: 1.5em;
+}
+
+.carousel-text__title {
+  font-size: 1.618em;
+  font-weight: 600;
+  color: #3A3A3A;
+  margin-bottom: .6em;
+}
+
+.carousel-img {
+  width: 100%;
+}
+
+.carousel-img img {
+  width: 100%;
+}
+
+.carousel-buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 1em auto;
+  position: relative;
+  bottom: 0;
+}
+
+.carousel-buttons__single {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 23%;
+  height: .3em;
+  margin: 0 1%;
+  justify-content: space-between;
+  background: #ddd;
+  text-indent: -9999999px;
+  cursor: pointer;
+}
+
+.carousel-buttons__single:hover, .carousel-buttons__single:active {
+  background: #00c1c1;
+  transition: background-color .3s ease;
+}
+
+.carousel-buttons__single.active {
+  background: #00c1c1;
+  transition: background-color .3s ease;
+}
+
+@media screen and (min-width: 981px) {
+  .carousel-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .carousel-img {
+    width: 45%;
+  }
+  .carousel-text {
+    width: 50%;
+  }
+  .carousel-buttons {
+    width: 40%;
+  }
+}
+
+/* Riddle
+ *
+ * /sass/components/club.scss - club section styles
+ *
+ * coded by Anne
+ * started at 10/11/2018
+ */
+.clubs-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.clubs-item {
+  background: #fff;
+  padding: 2em 1em;
+  margin-bottom: 1.5em;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.card .wrapper {
+  background-color: white;
+  background-size: contain;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card .wrapper:hover .data {
+  transform: translateY(0);
+}
+
+.card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(100px + 1em));
+  transition: transform 0.3s;
+}
+
+.card .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card .title {
+  margin-top: 10px;
+  font-size: 1.618em;
+  color: #00c1c1;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: .4em;
+}
+
+.card .intro {
+  text-align: center;
+}
+
+.card .text {
+  height: 100px;
+  margin: 0;
+}
+
+.card .text p strong {
+  font-weight: bold;
+  color: #362F27;
+}
+
+.card .text p {
+  margin-bottom: .1em;
+  font-size: .9em;
+}
+
+.wrapper.bruxelles {
+  background: url("../assets/images/clubs/bruxelles.jpg");
+  background-size: contain;
+}
+
+.wrapper.liege {
+  background: url("../assets/images/clubs/liege.jpg");
+  background-size: contain;
+}
+
+.wrapper.charleroi {
+  background: url("../assets/images/clubs/charleroi.jpg");
+  background-size: contain;
+}
+
+.wrapper.namur {
+  background: url("../assets/images/clubs/namur.jpg");
+  background-size: contain;
+}
+
+.wrapper.nivelles {
+  background: url("../assets/images/clubs/nivelles.jpg");
+  background-size: contain;
+}
+
+.wrapper.meerhout {
+  background: url("../assets/images/clubs/banner.jpg");
+  background-size: contain;
+}
+
+.wrapper.canada {
+  background: url("../assets/images/clubs/banner.jpg");
+  background-size: contain;
+}
+
+.wrapper.lure {
+  background: url("../assets/images/clubs/lure.jpg");
+  background-size: contain;
+}
+
+.wrapper.strasbourg {
+  background: url("../assets/images/clubs/banner.jpg");
+  background-size: contain;
+}
+
+.wrapper.metz {
+  background: url("../assets/images/clubs/banner.jpg");
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .clubs-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 31%;
+  }
 }
 
 /* Riddle
@@ -362,7 +609,7 @@ html {
  */
 .section {
   width: 90%;
-  margin: 3em auto;
+  margin: 5em auto;
 }
 
 .section-title {
@@ -427,9 +674,33 @@ html {
   background-size: cover;
 }
 
+.section-bg {
+  background: #F8F8F8;
+  padding: 5em 0;
+}
+
 @media screen and (min-width: 768px) {
   .section {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  .section-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-content__img {
+    width: 45%;
+  }
+  .section-content__text {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .section {
+    max-width: 60%;
   }
 }
 

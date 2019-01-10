@@ -1,0 +1,144 @@
+/* Riddle
+ *
+ * /sass/components/club.scss - club section styles
+ *
+ * coded by Anne
+ * started at 10/11/2018
+ */
+
+.clubs {
+    &-container {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+    }
+    &-item {
+        background: #fff;
+        padding: 2em 1em;
+        margin-bottom: 1.5em;
+        box-shadow: 1px 1px 2px rgba(black, 0.2);
+    }
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 2em;
+
+  .wrapper {
+    background-color: white;
+    background-size: contain;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(black, 0.3), 0 15px 12px rgba(black, 0.2);
+    &:hover {
+      .data {
+        transform: translateY(0);
+      }
+    }
+  }
+  .data {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(calc(100px + 1em));
+    transition: transform 0.3s;
+    .content {
+      padding: 1em;
+      position: relative;
+      z-index: 1;
+      background-color: white;
+      box-shadow: 0 5px 30px 10px rgba(black, 0.3);
+    }
+  }
+
+  .title {
+    margin-top: 10px;
+    font-size: $sub2;
+    color: $lightColor;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: .4em;
+  }
+  .intro {
+      text-align: center;
+  }
+  .text {
+    height: 100px;
+    margin: 0;
+
+    p strong {
+        font-weight: bold;
+        color: $darkColor;
+    }
+    p {
+        margin-bottom: .1em;
+        font-size: .9em;
+    }
+  }
+
+}
+
+.wrapper.bruxelles {
+    background: url('../assets/images/clubs/bruxelles.jpg');
+    background-size: contain;
+}
+.wrapper.liege {
+    background: url('../assets/images/clubs/liege.jpg');
+    background-size: contain;
+}
+.wrapper.charleroi {
+    background: url('../assets/images/clubs/charleroi.jpg');
+    background-size: contain;
+}
+.wrapper.namur {
+    background: url('../assets/images/clubs/namur.jpg');
+    background-size: contain;
+}
+.wrapper.nivelles {
+    background: url('../assets/images/clubs/nivelles.jpg');
+    background-size: contain;
+}
+.wrapper.meerhout {
+    background: url('../assets/images/clubs/banner.jpg');
+    background-size: contain;
+}
+.wrapper.canada {
+    background: url('../assets/images/clubs/banner.jpg');
+    background-size: contain;
+}
+.wrapper.lure {
+    background: url('../assets/images/clubs/lure.jpg');
+    background-size: contain;
+}
+.wrapper.strasbourg {
+    background: url('../assets/images/clubs/banner.jpg');
+    background-size: contain;
+}
+.wrapper.metz {
+    background: url('../assets/images/clubs/banner.jpg');
+    background-size: contain;
+}
+
+
+@media screen and (min-width: 768px) {
+    .clubs {
+        &-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    .card {
+        width: 48%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 31%;
+    }
+}
