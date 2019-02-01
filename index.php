@@ -53,6 +53,24 @@
                 <figure class="slider-image">
                     <img src="build/assets/images/banner.jpg" alt="">
                 </figure>
+                <figure class="slider-image">
+                    <img src="build/assets/images/clubs/liege.jpg" alt="">
+                </figure>
+                <figure class="slider-image">
+                    <img src="build/assets/images/clubs/bruxelles.jpg" alt="">
+                </figure>
+                <figure class="slider-image">
+                    <img src="build/assets/images/clubs/charleroi.jpg" alt="">
+                </figure>
+                <figure class="slider-image">
+                    <img src="build/assets/images/clubs/lure.jpg" alt="">
+                </figure>
+                <figure class="slider-image">
+                    <img src="build/assets/images/clubs/namur.jpg" alt="">
+                </figure>
+                <figure class="slider-image">
+                    <img src="build/assets/images/clubs/nivelles.jpg" alt="">
+                </figure>
             </div>
             <h1 class="slider-title">
                 Riddle of Steel
@@ -98,7 +116,7 @@
             <section id="about" class="section">
                 <h2 class="section-title">L'escrime ludique</h2>
                 <div class="section-content">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AkaD_sOpXiA" allow="autoplay; encrypted-media" allowfullscreen class="section-content__img left invisible"></iframe>
+                    <video width="560" height="315" src="http://video.canalc.be/2019-01-30/10.mp4" autoplay="false" controls allow="encrypted-media" allowfullscreen class="section-content__img left invisible"></video>
                     <div class="section-content__text content right invisible">
                         <p>
                             L’escrime ludique est peu à peu devenue une activité à part entière, pratiquée tant pour l’aspect sportif que pour sa dimension divertissante et conviviale.
@@ -162,8 +180,8 @@
                                         Comme nous louons plusieurs salles, nous demandons à nos membres une participation financière.
                                     </p>
                                     <p>
-                                        Le P.A.F. de l'abonnement à l'année est de 80 euros. <br />
-                                        Il est également possible d'acheter des cartes non nominatives au tarif de 25 et 50 euros pour respectivement 6 et 15 séances.
+                                        Le P.A.F. de l'abonnement à l'année est de 95 euros. <br />
+                                        Il est également possible d'acheter des cartes non nominatives au tarif de 30 et 60 euros pour respectivement 6 et 15 séances.
                                         Le tarif à la séance est de 5 euros.
                                     </p>
                                     <p>
@@ -245,7 +263,7 @@
                                 <div class="data">
                                     <div class="content">
                                         <h1 class="title">Ros Namur</h1>
-                                        <p class="intro">Le mercredi de 18h à 20h</p>
+                                        <p class="intro">Le mercredi de 18h à 21h</p>
                                         <div class="text">
                                             <p>Avenue Jean Materne, n°264 - 5100 Jambes</p>
                                         </div>
@@ -273,7 +291,7 @@
                                 <div class="data">
                                     <div class="content">
                                         <h1 class="title">Ros Charleroi</h1>
-                                        <p class="intro">Le dimanche de 17h à 19h</p>
+                                        <p class="intro">Le dimanche de 17h à 20h</p>
                                         <div class="text">
                                             <p>Place Albert 1er, 38 - 6030 Marchienne-au-Pont</p>
                                         </div>
@@ -295,20 +313,6 @@
                             </div>
                         </li>
                         <li class="club-item invisible club card">
-                            <div class="wrapper canada">
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title">Ros Canada</h1>
-                                        <p class="intro">Le mercredi de 18h15 à 19h15</p>
-                                        <div class="text">
-                                            <p><strong>En partenariat avec l'ordre du combat récréatif</strong></p>
-                                            <p>Gymnase de l'école primaire de St-Mathias-sur-le-Richelieu, Québec</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="club-item invisible club card">
                             <div class="wrapper lure">
                                 <div class="data">
                                     <div class="content">
@@ -317,20 +321,6 @@
                                         <div class="text">
                                             <p><strong>en partenariat avec l'association "Incontrôlable compagnie"</strong></p>
                                             <p>5, Rue du docteur Bertrand, 70200 Lure</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="club-item invisible club card">
-                            <div class="wrapper strasbourg">
-                                <div class="data">
-                                    <div class="content">
-                                        <h1 class="title">Ros Lure</h1>
-                                        <p class="intro">Le mardi de 20h à 22h</p>
-                                        <div class="text">
-                                            <p><strong>Centre socio-culturel du Marais</strong></p>
-                                            <p>8 Rue de Touraine 67300 Schiltigheim </p>
                                         </div>
                                     </div>
                                 </div>
@@ -346,6 +336,34 @@
                                             <p><strong>MJC des 4 Bornes</strong></p>
                                             <p>Dans le dojo</p>
                                             <p>Rue Etienne Gantrel, 57050 Metz</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="club-item invisible club card">
+                            <div class="wrapper strasbourg">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="title">Ros Strasbourg</h1>
+                                        <p class="intro">Le mardi de 20h à 22h</p>
+                                        <div class="text">
+                                            <p><strong>Centre socio-culturel du Marais</strong></p>
+                                            <p>8 Rue de Touraine 67300 Schiltigheim </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="club-item invisible club card">
+                            <div class="wrapper canada">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="title">Ros Canada</h1>
+                                        <p class="intro">Le mercredi de 18h15 à 19h15</p>
+                                        <div class="text">
+                                            <p><strong>En partenariat avec l'ordre du combat récréatif</strong></p>
+                                            <p>Gymnase de l'école primaire de St-Mathias-sur-le-Richelieu, Québec</p>
                                         </div>
                                     </div>
                                 </div>
@@ -380,17 +398,17 @@
                                 </p>
                                 <div class="carousel-text__answer">
                                     <p>
-                                        Le document B.W.A.T est le document de références concernant l'homologation des armes dans nos clubs. Consultez le en cliquant <a href="http://www.larp.be/wp-content/uploads/2017/10/Bwat-M%C3%A0J-20171.pdf" class="link" rel="external" target="_blank" title="Lire le document BWAT">ici</a>
+                                        Le document B.W.A.T est le document de références concernant l'homologation des armes dans nos clubs. Consultez le en cliquant <a href="http://www.larp.be/wp-content/uploads/2018/07/Bwat-M%C3%A0J-2018.pdf" class="link" rel="external" target="_blank" title="Lire le document BWAT">ici</a>
                                     </p>
                                 </div>
-                                <p class="carousel-text__title">
+                                <!-- <p class="carousel-text__title">
                                     Glossaire
                                 </p>
                                 <div class="carousel-text__answer">
                                     <p>
                                         Cliquez <a href="build/assets/images/glossaire.png" class="link" target="_blank" title="Voir le glossaire">ici</a> pour vous familiariser avec les termes employés en escrime ludique
                                     </p>
-                                </div>
+                                </div> -->
                                 <p class="carousel-text__title">
                                     Exercices
                                 </p>

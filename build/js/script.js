@@ -16,7 +16,7 @@ $(document).ready(function() {
     //Carousel for hero photos
     var mySiema = new Siema({
         selector: '.siema',
-        duration: 400,
+        duration: 600,
         easing: 'ease-out',
         perPage: 1,
         startIndex: 0,
@@ -28,7 +28,7 @@ $(document).ready(function() {
         onInit: () => {},
         onChange: () => {},
     });
-    setInterval(() => mySiema.next(), 3000)
+    setInterval(() => mySiema.next(), 4000)
 
     //carousel for FAQ
     var carousel = new Siema({

@@ -31,52 +31,7 @@
 
   //Home Background Slider
 
-  $(function() {
 
-    $.mbBgndGallery.buildGallery({
-      containment: "#intro",
-      timer: 4000,
-      effTimer: 1000,
-      controls: "#controls",
-      grayScale: false,
-      shuffle: false,
-      preserveWidth: false,
-      effect: "fade",
-      effect: {
-        enter: {
-          left: 0,
-          opacity: 0
-        },
-        exit: {
-          left: 0,
-          opacity: 0
-        },
-        enterTiming: "ease-in",
-        exitTiming: "ease-in"
-      },
-
-      // If your server allow directory listing you can use:
-      // (however this doesn't work locally on your computer)
-
-      //folderPath:"testImage/",
-
-      // else:
-
-      images: [
-        "build/assets/images/banner.jpg",
-        "build/assets/images/2.jpg"
-      ],
-
-      onStart: function() {},
-      onPause: function() {},
-      onPlay: function(opt) {},
-      onChange: function(opt, idx) {},
-      onNext: function(opt) {},
-      onPrev: function(opt) {}
-    });
-
-
-  });
 
   // featured text
   // $("#rotator .1strotate").textrotator({
