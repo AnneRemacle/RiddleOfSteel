@@ -63,7 +63,7 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos && prevScrollpos < 200) {
-    document.getElementById("navigation").style.top = "-6em";
+    document.getElementById("navigation").style.top = "-10em";
   } else {
     document.getElementById("navigation").style.top = "0";
   }

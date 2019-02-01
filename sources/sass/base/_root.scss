@@ -17,6 +17,50 @@
      line-height: 1.5;
  }
 
+ body {
+     position: relative;
+ }
+
 p {
     line-height: 1.5;
+}
+
+.center {
+    text-align: center;
+}
+
+.back-to-top {
+    background: $lightColor;
+    padding: .5em;
+    color: white;
+    position: fixed;
+    display: none;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    font-size: 1em;
+    transition: background 0.5s;
+    z-index:1000;
+
+    &:hover {
+        background: $lightContrastColor;
+    }
+}
+
+.fixed-to-top {
+    top: 0;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.link {
+    text-decoration: none;
+    color: $lightColor;
+    transition: .3s ease;
+
+    &:hover, &:focus {
+        color: $darkColor;
+    }
 }

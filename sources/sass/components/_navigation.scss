@@ -11,7 +11,7 @@
      width: 100%;
      background: lighten($darkColor, 10%);
      padding: .5em 3%;
-     top: -6em;
+     top: -10em;
      z-index: 3;
      transition: top .3s ease;
 
@@ -126,7 +126,7 @@
  @media screen and( min-width: 1024px ) {
      .navigation {
          &-logo {
-             max-width: 15%;
+             max-width: 12%;
          }
          &-button {
              display: none;

@@ -1,0 +1,23 @@
+/* Riddle
+ *
+ * /sass/components/footer.scss - Footer styles
+ *
+ * coded by Anne
+ * started at 10/11/2018
+ */
+
+ .footer {
+     background: $lightColor;
+     display: -webkit-flex;
+     display: -ms-flex;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+
+     &-content {
+         padding: 2em 0;
+         color: $darkColor;
+         font-size: .9em;
+     }
+ }

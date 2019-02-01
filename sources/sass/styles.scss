@@ -26,9 +26,11 @@
 
 
 // 6. Components - Design des composants, morceaux d'UI
+@import "components/animations";
 @import "components/carousel";
 @import "components/club";
 @import "components/content";
+@import "components/footer";
 @import "components/form";
 @import "components/navigation";
 @import "components/section";
