@@ -17,17 +17,17 @@ var
 	dest = 'build/';
 
 var
-	imagesOpts = {
-		in: source + "images/*.*",
-		out: dest + "assets/images/",
-		watch: source + "images/*.*"
-	},
-	imageUriOpts = {
-		in: source + "images/*.*",
-		out: source + "sass/images/",
-		filename: "_datauri.scss",
-		namespace: "img"
-	},
+	// imagesOpts = {
+	// 	in: source + "images/*.*",
+	// 	out: dest + "assets/images/",
+	// 	watch: source + "images/**/*.*"
+	// },
+	// imageUriOpts = {
+	// 	in: source + "images/*.*",
+	// 	out: source + "sass/images/",
+	// 	filename: "_datauri.scss",
+	// 	namespace: "img"
+	// },
 	css = {
 		in: source + "sass/styles.scss",
 		watch: [ source + "sass/**/*" ],
@@ -63,22 +63,22 @@ gulp.task( "sass", function() {
 		.pipe( browsersync.reload( { stream: true } ) );
 } );
 
-gulp.task( "images", function(){
-	return gulp.src( imagesOpts.in )
-		.pipe( destclean( imagesOpts.out ) )
-		.pipe( newer( imagesOpts.out ) )
-		.pipe( size( { title: "Images size before compression; ", showFiles: true } ) )
-		.pipe( imagemin() )
-		.pipe( size( { title: "Images size after compression; ", showFiles: true } ) )
-		.pipe( gulp.dest( imagesOpts.out ) );
-} );
-
-gulp.task( "imageuri", function() {
-	return gulp.src( imageUriOpts.in )
-		.pipe( imagemin() )
-		.pipe( imacss( imageUriOpts.filename, imageUriOpts.namespace ) )
-		.pipe( gulp.dest( imageUriOpts.out ) );
-} );
+// gulp.task( "images", function(){
+// 	return gulp.src( imagesOpts.in )
+// 		.pipe( destclean( imagesOpts.out ) )
+// 		.pipe( newer( imagesOpts.out ) )
+// 		.pipe( size( { title: "Images size before compression; ", showFiles: true } ) )
+// 		.pipe( imagemin() )
+// 		.pipe( size( { title: "Images size after compression; ", showFiles: true } ) )
+// 		.pipe( gulp.dest( imagesOpts.out ) );
+// } );
+//
+// gulp.task( "imageuri", function() {
+// 	return gulp.src( imageUriOpts.in )
+// 		.pipe( imagemin() )
+// 		.pipe( imacss( imageUriOpts.filename, imageUriOpts.namespace ) )
+// 		.pipe( gulp.dest( imageUriOpts.out ) );
+// } );
 
 gulp.task( "html", function() {
 	// résultat du premier traitement, à savoir les include et les valeurs des variables
@@ -98,7 +98,7 @@ gulp.task( "browsersync", function() {
 	browsersync( syncOpts );
 } );
 
-gulp.task( "default", [ "sass", "html", "browsersync", "imageuri", "images" ], function(  ) {
+gulp.task( "default", [ "sass", "html", "browsersync"], function(  ) {
 	gulp.watch( html.watch, [ "html", browsersync.reload ] );
 	gulp.watch( css.watch, [ "sass" ] );
 } );

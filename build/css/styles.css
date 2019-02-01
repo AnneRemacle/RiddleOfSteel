@@ -396,6 +396,93 @@ p {
 
 /* Riddle
  *
+ * /sass/components/form.scss - Contact form
+ *
+ * coded by Anne
+ * started at 28/01/2019
+ */
+.form {
+  width: 50%;
+  margin: 1em auto;
+  max-width: 900px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.form-control {
+  width: 100%;
+  font-size: 1em;
+  padding: .5em;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  transition: .3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border: 1px solid #00c1c1;
+}
+
+.form button {
+  border: 1px solid #00c1c1;
+  background: #00c1c1;
+  color: white;
+  font-size: 1.2em;
+  padding: .3em 1em;
+  border-radius: 2px;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.form button:hover {
+  color: #00c1c1;
+  background: white;
+}
+
+.form .message {
+  margin-bottom: 1em;
+}
+
+.form .error {
+  color: red;
+}
+
+.form .success {
+  color: green;
+}
+
+.form .validation {
+  margin-top: .3em;
+}
+
+.form .validation p {
+  color: red;
+  font-size: .9em;
+}
+
+@media screen and (min-width: 300px) and (max-width: 525px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 526px) and (max-width: 767px) {
+  .form {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form {
+    width: 70%;
+  }
+}
+
+/* Riddle
+ *
  * /sass/components/navigation.scss - navigation styles
  *
  * coded by Anne
@@ -768,5 +855,62 @@ p {
 @media screen and (min-width: 2560px) {
   .slider-title {
     font-size: 6em;
+  }
+}
+
+/* Riddle
+ *
+ * /sass/components/socials.scss - socials
+ *
+ * coded by Anne
+ * started at 28/01/2019
+ */
+.socials-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.socials-single {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #282828;
+}
+
+.socials-single:hover .socials-single__icon, .socials-single:focus .socials-single__icon {
+  color: #362F27;
+}
+
+.socials-single__icon {
+  color: #00c1c1;
+  transition: .3s ease;
+  margin-bottom: .4em;
+}
+
+.socials-single__title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 300px) and (max-width: 425px) {
+  .socials-container {
+    flex-direction: column;
+  }
+  .socials-single {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 680px) {
+  .socials-container {
+    width: 80%;
   }
 }

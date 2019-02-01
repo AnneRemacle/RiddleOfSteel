@@ -14,6 +14,7 @@
         <script src="build/js/script.js"></script>
         <script src="build/assets/js/custom.js"></script>
         <script src="build/assets/js/grid.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <title>Riddle of Steel</title>
     </head>
     <body>
@@ -356,5 +357,192 @@
             </section>
         </div>
 
+        <div class="section-img first">
+            <p class="section-img__texte">Soyez prêt pour le combat en GN</p>
+        </div>
+
+        <section id="pratique" class="section">
+            <h2 class="section-title">Informations pratiques</h2>
+            <p>Si vous n'êtes pas famillier avec notre école, vous vous posez sans doute quelques questions</p>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item active">
+                        <div class="carousel-text">
+                            <p class="carousel-text__title">
+                                Traité d'escrime ludique
+                            </p>
+                            <div class="carousel-text__answer">
+                                <p>
+                                    Cliquez ici pour accéder au document de référence sur l'escrime ludique.
+                                </p>
+                            </div>
+                            <p class="carousel-text__title">
+                                B.W.A.T
+                            </p>
+                            <div class="carousel-text__answer">
+                                <p>
+                                    Le document B.W.A.T est le document de références concernant l'homologation des armes dans nos clubs. Consultez le en cliquant ici
+                                </p>
+                            </div>
+                            <p class="carousel-text__title">
+                                Glossaire
+                            </p>
+                            <div class="carousel-text__answer">
+                                <p>
+                                    Cliquez ici pour vous familiariser avec les termes employés en escrime ludique
+                                </p>
+                            </div>
+                            <p class="carousel-text__title">
+                                Exercices
+                            </p>
+                            <div class="carousel-text__answer">
+                                <p>
+                                    Nous mettons à votre disposition une série d'exercice que vous retrouverez également lors de nos séances. Cliquez ici
+                                </p>
+                            </div>
+                        </div>
+                        <figure class="carousel-img">
+                            <img src="build/assets/images/2.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="section-bg">
+            <section id="contact" class="section">
+                <h2 class="section-title">Contact</h2>
+                <p>Si vous recherchez d'autres informations, n'hésitez pas à posez vos questions via notre formulaire de contact. </p>
+
+                <?php
+                    $errors = [];
+                    $old_data = [];
+
+                    if(isset($_POST["name"]) && isset($_POST["subject"]) && isset($_POST["sender_email"]) && isset($_POST["message"])) {
+                        $name = $_POST["name"];
+                        $subject = $_POST["subject"];
+                        $sender_email = $_POST["sender_email"];
+                        $message = $_POST["message"];
+
+                        $old_data = $_POST;
+
+                        $errors = [
+                            "name" => ($name != "" && $name != null) ? false : "Veuillez entrer votre nom",
+                            "subject" => ($subject != "" && $subject != null) ? false : "Veuillez entrer un sujet",
+                            "sender_email" => ($sender_email != "" && $sender_email != null && filter_var($sender_email, FILTER_VALIDATE_EMAIL)) ? false : "Veuillez entrer un email valide",
+                            "message" => ($message != "" && $message != null) ? false : "Veuillez écrire un message",
+                        ];
+
+                        if(empty(array_filter($errors))){
+                            var_dump(mail("anne.m.remacle@gmail.com", $_POST["subject"], "nouveau message de ".$_POST["sender_email"].": ".$_POST["message"]));
+
+                            $old_data = [];
+                        }
+                    }
+
+
+                ?>
+
+                <form id="contact" action="#contact" method="POST" class="form" role="form">
+                    <?php if(empty(array_filter($errors))): ?>
+                        <div class="message success" id="sendmessage">Merci, votre message a été envoyé!</div>
+                    <?php endif; ?>
+                    <div class="form-group">
+                        <input
+                            id="name"
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Nom et prénom"
+                            value="<?php echo isset($old_data["name"]) ? $old_data["name"] : ''; ?>"
+                        />
+                        <div class="validation">
+                            <?php if(isset($errors["name"])) :?>
+                                <p><?php echo $errors["name"]; ?></p>
+                            <?php endif;?>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input
+                            id="email"
+                            type="email"
+                            class="form-control"
+                            name="sender_email"
+                            placeholder="Votre adresse mail"
+                            value="<?php echo isset($old_data["sender_email"]) ? $old_data["sender_email"] : ''; ?>"
+                        />
+                        <div class="validation">
+                            <?php if(isset($errors["sender_email"])) :?>
+                                <p><?php echo $errors["sender_email"]; ?></p>
+                            <?php endif;?>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input
+                            id="subject"
+                            type="text"
+                            class="form-control"
+                            name="subject"
+                            placeholder="Sujet"
+                            value="<?php echo isset($old_data["subject"]) ? $old_data["subject"] : ''; ?>"
+                        />
+                        <div class="validation">
+                            <?php if(isset($errors["subject"])) :?>
+                                <p><?php echo $errors["subject"]; ?></p>
+                            <?php endif;?>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea
+                            class="form-control"
+                            name="message"
+                            rows="5"
+                            placeholder="Message"
+                        ><?php echo isset($old_data["message"]) ? $old_data["message"] : ''; ?></textarea>
+                        <div class="validation">
+                            <?php if(isset($errors["message"])) :?>
+                                <p><?php echo $errors["message"]; ?></p>
+                            <?php endif;?>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-theme btn-lg btn-block">Envoyer</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <section id="bottom-widget" class="socials section">
+            <h2 class="section-title">Retrouvez nous en ligne</h2>
+            <div class="socials-container">
+                <a href="https://fr-fr.facebook.com/Riddle-of-Steel-296714857049503/" class="socials-single" target="_blank">
+                    <span class="fa-stack fa-2x socials-single__icon">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p class="socials-single__title">Facebook</p>
+                </a>
+                <a href="https://www.youtube.com/user/0Riddleofsteel0" class="socials-single" target="_blank">
+                    <span class="fa-stack fa-2x socials-single__icon">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p class="socials-single__title">Youtube</p>
+                </a>
+                <a href="mailto:0riddleofsteel0@gmail.com" class="socials-single" target="_blank">
+                    <span class="fa-stack fa-2x socials-single__icon">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p class="socials-single__title">Email</p>
+                </a>
+            </div>
+        </section>
     </body>
 </html>
