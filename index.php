@@ -544,5 +544,14 @@
                 </a>
             </div>
         </section>
+
+        <footer class="footer">
+          <div class="footer-content">
+              <p>Riddle of Steel asbl - N° d'entreprise : BE 0837.777.023</p>
+          </div>
+          <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </footer>
+
+
     </body>
 </html>

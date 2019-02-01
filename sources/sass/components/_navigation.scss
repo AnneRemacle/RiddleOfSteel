@@ -9,7 +9,7 @@
  .navigation {
      position: fixed;
      width: 100%;
-     background: lighten($lightColor, 5%);
+     background: lighten($darkColor, 10%);
      padding: .5em 3%;
      top: -6em;
      z-index: 3;
@@ -158,13 +158,14 @@
                  &:hover, &:focus {
                      background: transparent;
                      a {
-                         color: rgba(lighten($darkColor, 5%), .65);
-                         transition: color .3s ease;
+                         color: $lightContrastColor;
+
                      }
                  }
 
                  a {
-                     color: $darkColor;
+                     color: $lightColor;
+                      transition: color .3s ease;
                  }
              }
 

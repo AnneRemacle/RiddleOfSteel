@@ -183,12 +183,12 @@ p {
 }
 
 .carousel-buttons__single:hover, .carousel-buttons__single:active {
-  background: #00c1c1;
+  background: #68B3C3;
   transition: background-color .3s ease;
 }
 
 .carousel-buttons__single.active {
-  background: #00c1c1;
+  background: #68B3C3;
   transition: background-color .3s ease;
 }
 
@@ -266,7 +266,7 @@ p {
 .card .title {
   margin-top: 10px;
   font-size: 1.618em;
-  color: #00c1c1;
+  color: #68B3C3;
   font-weight: 600;
   text-align: center;
   margin-bottom: .4em;
@@ -423,12 +423,12 @@ p {
 
 .form-control:focus {
   outline: none;
-  border: 1px solid #00c1c1;
+  border: 1px solid #68B3C3;
 }
 
 .form button {
-  border: 1px solid #00c1c1;
-  background: #00c1c1;
+  border: 1px solid #68B3C3;
+  background: #68B3C3;
   color: white;
   font-size: 1.2em;
   padding: .3em 1em;
@@ -438,7 +438,7 @@ p {
 }
 
 .form button:hover {
-  color: #00c1c1;
+  color: #68B3C3;
   background: white;
 }
 
@@ -491,7 +491,7 @@ p {
 .navigation {
   position: fixed;
   width: 100%;
-  background: #00dbdb;
+  background: #54493c;
   padding: .5em 3%;
   top: -6em;
   z-index: 3;
@@ -501,7 +501,7 @@ p {
 .navigation-button {
   position: absolute;
   color: white;
-  background: rgba(0, 168, 168, 0.65);
+  background: rgba(86, 170, 188, 0.65);
   display: block;
   text-decoration: none;
   padding: .5em 1em;
@@ -512,7 +512,7 @@ p {
 }
 
 .navigation-button:hover, .navigation-button:focus {
-  background: rgba(0, 219, 219, 0.65);
+  background: rgba(122, 188, 202, 0.65);
   transition: background .3s ease;
 }
 
@@ -532,7 +532,7 @@ p {
   font-size: 1.272em;
   display: block;
   text-align: center;
-  background: rgba(0, 168, 168, 0.65);
+  background: rgba(86, 170, 188, 0.65);
   padding: .7em 0;
 }
 
@@ -542,7 +542,7 @@ p {
 }
 
 .navigation-menu__item:hover, .navigation-menu__item:focus {
-  background: rgba(0, 219, 219, 0.65);
+  background: rgba(122, 188, 202, 0.65);
   transition: .3s ease;
 }
 
@@ -624,11 +624,11 @@ p {
     background: transparent;
   }
   .navigation-menu__item:hover a, .navigation-menu__item:focus a {
-    color: rgba(69, 60, 50, 0.65);
-    transition: color .3s ease;
+    color: #00c1c1;
   }
   .navigation-menu__item a {
-    color: #362F27;
+    color: #68B3C3;
+    transition: color .3s ease;
   }
 }
 
@@ -890,7 +890,7 @@ p {
 }
 
 .socials-single__icon {
-  color: #00c1c1;
+  color: #68B3C3;
   transition: .3s ease;
   margin-bottom: .4em;
 }
